@@ -95,6 +95,6 @@ li{
 }
 #home-video video{
     display: flex;
-    justify-content: center;
+    align-content: center;
     border: solid 2px fuchsia;
 }
