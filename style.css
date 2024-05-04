@@ -137,8 +137,13 @@ li{
     width: 75%;
     height: 70%;
     border-radius: 15%;
-    box-shadow: -1.5rem -.6rem 2.7rem 0rem black;
+    box-shadow: -.2rem -.2rem .9rem .2rem black;
 }
 #about-photo a{
     color: aliceblue;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    letter-spacing: .08em;
+    font-style: normal;
+    text-decoration: none;
 }
