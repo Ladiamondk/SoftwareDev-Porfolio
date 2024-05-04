@@ -48,7 +48,7 @@ li{
     font-style: normal;
 }
 .csv-download button{
-    width: 115px;
+    width: 125px;
     height: 30px;
     color: white;
     border: solid 1px white;
@@ -58,6 +58,10 @@ li{
     font-weight: 700;
     letter-spacing: .08em;
     font-style: normal;
+}
+.csv-download button:hover{
+    border: solid 3px white;
+    cursor: pointer;
 }
 
 /*Home page area*/
@@ -104,4 +108,37 @@ li{
     width: 350px;
     box-shadow: inset -9px 9px 80px 50px rgba(0,0,0,0.6), -9px 2px 80px 50px rgba(0,0,0,0.6);
     border-radius: 12rem;
+}
+
+/*About me area of page*/
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 30rem;
+    margin: 3rem 5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 2px 5px 3px black;
+    background-color: #390451;
+}
+#about-info{
+    border: solid greenyellow 2px;
+   
+}
+#about-photo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35rem 15rem;
+    box-shadow: inset -9px 9px 60px 20px hsl(330, 76%, 26%), -5px 5px 90px 8px hsl(330, 76%, 26%);
+    background-color: rgb(222, 2, 182, 10%);
+}
+#about-photo img{
+    width: 75%;
+    height: 70%;
+    border-radius: 15%;
+    box-shadow: -1.5rem -.6rem 2.7rem 0rem black;
+}
+#about-photo a{
+    color: aliceblue;
 }
