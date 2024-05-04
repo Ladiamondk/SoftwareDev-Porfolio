@@ -96,6 +96,7 @@ li{
 #home-video{
     background-image: url(klipartz.com.png);
     background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
 }
