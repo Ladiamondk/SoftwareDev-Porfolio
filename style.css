@@ -67,7 +67,7 @@ li{
 /*Home page area*/
 #home{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 22rem;
     margin: 0rem 5rem;
     gap: 5px;
