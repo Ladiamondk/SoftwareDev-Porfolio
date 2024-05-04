@@ -94,10 +94,6 @@ li{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,8,141,1) 48%, rgba(252,0,255,1) 100%);
 }
 #home-video{
-    display: flex;
-    align-items: center;
     border: solid 2px fuchsia;
-    background-image:url(/Untitled\ design.png);
-    background-repeat: no-repeat;
-    background-size: 40rem;
+
 }
