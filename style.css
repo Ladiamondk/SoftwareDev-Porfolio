@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Paytone+One&display=swap');
 body{
     background-color: #34044a;
+    color: white;
 }
 /*Nav and header*/
 header{
@@ -48,7 +49,7 @@ li{
     font-style: normal;
 }
 .csv-download button{
-    width: 115px;
+    width: 125px;
     height: 30px;
     color: white;
     border: solid 1px white;
@@ -59,11 +60,15 @@ li{
     letter-spacing: .08em;
     font-style: normal;
 }
+.csv-download button:hover{
+    border: solid 3px white;
+    cursor: pointer;
+}
 
 /*Home page area*/
 #home{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 22rem;
     margin: 0rem 5rem;
     gap: 5px;
@@ -104,29 +109,4 @@ li{
     width: 350px;
     box-shadow: inset -9px 9px 80px 50px rgba(0,0,0,0.6), -9px 2px 80px 50px rgba(0,0,0,0.6);
     border-radius: 12rem;
-}
-
-/* Example of media query for smaller screens */
-@media (max-width: 768px) {
-    #social-media li {
-        margin-left: 0; /* Adjust margin for smaller screens */
-    }
-    #home {
-        grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
-    }
-    #about {
-        grid-template-columns: 1fr; /* Adjust grid layout for smaller screens */
-    }
-    /* Add more responsive styles as needed */
-}
-
-/* Example of flexible image size */
-#home-video video {
-    max-width: 100%; /* Ensure video scales down on smaller screens */
-    height: auto;
-}
-
-/* Example of relative font size */
-#about-info p {
-    font-size: 1rem; /* Relative font size */
 }
