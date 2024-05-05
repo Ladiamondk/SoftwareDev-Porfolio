@@ -5,6 +5,8 @@
 - [https://www.canva.com] used canva to create a quick logo
 - [https://dribbble.com] used to find design inspo 
 - [convertoncloud] to convert my ios video/mov to a mp4 so thatit works using html
+- [https://www.flaticon.com/] for icon images
+- 
 # New Things learned
 - This is really learned but a forgotten requirement to use Justify-content you have to have the display flex attribute
 - This was my first time working with video and audio. Mov/ video from ios devices are not compatible to work in all browsers and mmp4ay need to be convert to another file type
