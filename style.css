@@ -104,6 +104,7 @@ li{
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
+    height: fit-content;
 }
 #home-video video{
     width: 350px;
@@ -163,6 +164,20 @@ li{
     font-size: 16px;
     letter-spacing: .9px;
     word-spacing: 1px;
+    display: flex;
+    overflow: hidden; /* Hide overflowing content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 180px;
+}
+#about-info p::-webkit-scrollbar{
+    background-color: rgb(202, 11, 202, 70%);
+    border: solid 1.5px rgb(192, 192, 192);
+    border-radius: 1rem;
+}
+#about-info p::-webkit-scrollbar-thumb{
+    background-color: rgb(117, 16, 66, 50%);
+    
+    border-radius: 5rem;
 }
 .icon img{
     height: 1.5rem;
