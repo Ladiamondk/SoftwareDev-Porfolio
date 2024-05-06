@@ -48,6 +48,13 @@ li{
     letter-spacing: .08em;
     font-style: normal;
 }
+li a{
+    color: #fff;
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(139, 0, 139, 50%);
+}
 .csv-download button{
     width: 125px;
     height: 30px;
@@ -104,7 +111,6 @@ li{
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    height: fit-content;
 }
 #home-video video{
     width: 350px;
@@ -169,14 +175,16 @@ li{
     overflow-y: auto; /* Enable vertical scrolling */
     max-height: 180px;
 }
+#about-info p:hover{
+    cursor: pointer;
+}
 #about-info p::-webkit-scrollbar{
     background-color: rgb(202, 11, 202, 70%);
     border: solid 1.5px rgb(192, 192, 192);
     border-radius: 1rem;
 }
 #about-info p::-webkit-scrollbar-thumb{
-    background-color: rgb(117, 16, 66, 50%);
-    
+    background-color: rgb(117, 16, 66, 50%);  
     border-radius: 5rem;
 }
 .icon img{
@@ -205,4 +213,111 @@ li{
 }
 #about-info label{
     font-size: 20px;
+}
+#experience .time-worked{
+    display: flex;
+    color: rgb(138, 43, 226,70%);
+    justify-content: right;
+    margin-bottom: .5em;
+}
+
+#experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#experience h1{
+    margin: 0.3em;
+    font-size: 2.2em;
+}
+#second-h1{
+    display: flex;
+}
+#second-h1 img{
+    padding-right: .5em;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title p{
+    color: rgb(162, 43, 144);
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.title p::before, .title p::after{
+    content: '';
+    height: .1em;
+    background-color: rgb(162, 43, 144);
+    display: block;
+}
+.title p{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+}
+.timeline{
+    margin: 2em auto;
+    max-width: 34.15em;
+}
+.checkpoint{
+    max-width: 25.15em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.checkpoint p{
+    line-height: 18px;
+    color: rgb(240, 248, 255);
+    margin-top: .2em;
+}
+/*alignment for the timeline to meet in the middle for a vertical line*/
+.checkpoint:nth-child(odd){
+    border-left: 3px solid  rgb(162, 43, 144, 50%);
+    padding-left: 3em;
+    transform: translateX(14.07em);
+}
+.checkpoint:nth-child(even){
+    border-right: 3px solid  rgb(162, 43, 144, 50%);
+    padding-right: 3em;
+    transform: translateX(-14.07em); 
+}
+/*line that connects the job description box to the timeline*/
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    content: '';
+    background-color: rgb(162, 43, 144, 50%);
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+/*the circles on the timeline*/
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+    content: '';
+    background: rgb(162, 43, 144, 90%);
+    box-shadow: 0 0 0.5em #fff;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before{
+    right: -0.5em;
 }
