@@ -321,3 +321,7 @@ li a:hover{
 .checkpoint:nth-child(even) div::before{
     right: -0.5em;
 }
+/*Project area*/
+#projects h1{
+    margin: .2em;
+}
